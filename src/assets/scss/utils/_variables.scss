@@ -18,6 +18,28 @@ $clr-neutral-dark-blue: hsl(235, 46%, 20%);
 $clr-neutral-desaturated-blue: hsl(235, 45%, 61%);
 $clr-neutral-pale-blue: hsl(236, 100%, 87%);
 
+// Background Colors Map
+
+$bg-color: (
+  1: $clr-primary-light-red-work,
+  2: $clr-primary-soft-blue-play,
+  3: $clr-primary-light-red-study,
+  4: $clr-primary-lime-green-exercise,
+  5: $clr-primary-violet-social,
+  6: $clr-primary-soft-orange-self-care,
+);
+
+// Background Block Images
+
+$bg-image: (
+  1: work,
+  2: play,
+  3: study,
+  4: exercise,
+  5: social,
+  6: self-care,
+);
+
 // Topography
 
 // Font Family
@@ -27,6 +49,7 @@ $ff-rubik: 'Rubik', sans-serif;
 // Font Sizes
 
 $fs-root: 1rem;
+$fs-name: 2.5rem;
 $fs-titles: 1.1rem;
 
 // Font Weights

@@ -1,3 +1,46 @@
 @use '../utils/variables' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+// Stats
+
+@mixin font-report-light {
+  font-family: $ff-rubik;
+  font-size: 0.9rem;
+  color: $clr-neutral-pale-blue;
+}
+
+@mixin font-name-regular {
+  font-family: $ff-rubik;
+  font-size: $fs-name;
+  font-weight: $fw-300;
+  line-height: 1.2;
+}
+
+@mixin font-list-item-regular {
+  font-family: $ff-rubik;
+  font-size: $fs-titles;
+  color: $clr-neutral-desaturated-blue;
+  font-weight: $fw-400;
+}
+
+// Profile
+
+@mixin font-title-bold {
+  font-family: $ff-rubik;
+  font-size: $fs-titles;
+  font-weight: $fw-500;
+}
+
+@mixin font-current-regular {
+  font-family: $ff-rubik;
+  font-size: 3.6rem;
+  font-weight: $fw-300;
+}
+
+@mixin font-prev-regular {
+  font-family: $ff-rubik;
+  font-size: $fs-root;
+  color: $clr-neutral-pale-blue;
+  font-weight: $fw-300;
+}

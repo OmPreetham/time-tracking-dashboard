@@ -1,4 +1,5 @@
 @use '../utils/variables' as *;
+@use '../base/topography' as *;
 
 .block {
   display: grid;
@@ -6,11 +7,7 @@
 
   border-radius: 1.1rem;
 
-  background-color: $clr-primary-light-red-work;
-
   &__image {
-    background-color: $clr-primary-light-red-work;
-    background-image: url(/images/icon-work.svg);
     background-repeat: no-repeat;
     background-position: right 15px top -15px;
 
@@ -30,6 +27,11 @@
     gap: $gap-minus-5;
 
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $clr-neutral-desaturated-blue;
+    }
   }
 
   &__header {
@@ -39,8 +41,7 @@
   }
 
   &__title {
-    font-size: $fs-titles;
-    font-weight: $fw-500;
+    @include font-title-bold;
   }
 
   &__ellipsis {
@@ -53,14 +54,11 @@
   }
 
   &__current {
-    font-size: 3.6rem;
-    font-weight: $fw-300;
+    @include font-current-regular;
   }
 
   &__prev {
-    font-size: $fs-root;
-    color: $clr-neutral-pale-blue;
-    font-weight: $fw-300;
+    @include font-prev-regular;
   }
 }
 

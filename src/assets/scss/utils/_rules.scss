@@ -1,0 +1,19 @@
+@use '../utils/variables' as *;
+
+@each $number, $bgcolor in $bg-color {
+  .block:nth-of-type(#{$number}) {
+    background-color: $bgcolor;
+
+    .block__image {
+      background-color: $bgcolor;
+    }
+  }
+}
+
+@each $number, $image in $bg-image {
+  .block:nth-of-type(#{$number}) {
+    .block__image {
+      background-image: url(/images/icon-#{$image}.svg);
+    }
+  }
+}

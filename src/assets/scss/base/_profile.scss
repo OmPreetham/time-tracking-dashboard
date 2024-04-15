@@ -53,9 +53,7 @@
   }
 
   &__list__item {
-    font-size: $fs-titles;
-    color: $clr-neutral-desaturated-blue;
-    font-weight: $fw-400;
+    @include font-list-item-regular;
 
     cursor: pointer;
 
