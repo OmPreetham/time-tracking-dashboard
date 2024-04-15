@@ -1,0 +1,26 @@
+@use '../utils/variables' as *;
+
+html {
+  font-size: $fs-root;
+  font-family: $ff-rubik;
+  color: white;
+}
+
+body {
+  max-width: $max-width-body;
+  min-width: $min-width-body;
+
+  min-height: $min-height-screen;
+
+  margin-inline: auto;
+
+  background-color: $clr-neutral-very-dark-blue;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: $min-height-screen;
+}

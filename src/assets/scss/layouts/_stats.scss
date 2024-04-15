@@ -1,0 +1,19 @@
+@use '../utils/variables' as *;
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: $gap-double;
+}
+
+@media screen and (max-width: 950px) {
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
