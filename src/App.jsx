@@ -7,7 +7,7 @@ const App = () => {
         <div className="profile__content-wrapper">
           <img
             className="profile__image"
-            src="/images/image-jeremy.png"
+            src="images/image-jeremy.png"
             alt="Jeremy Robson"
           />
           <div className="profile__description">
@@ -33,7 +33,7 @@ const App = () => {
                   <p className="block__title">{block.title}</p>
                   <img
                     className="block__ellipsis"
-                    src="/images/icon-ellipsis.svg"
+                    src="images/icon-ellipsis.svg"
                     alt="Ellipsis"
                   />
                 </div>
